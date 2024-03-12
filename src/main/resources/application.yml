@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-cloud-service
+  cloud:
+    stream:
+#      bindings:
+#        sink-in-0-0:
+#          destination: toStream
+      kafka:
+        binder:
+          brokers: localhost
+          defaultBrokerPort: 29092
+#          transaction:
+#            transaction-id-prefix: my-transactional-producer-
+#      output-bindings: toStream
